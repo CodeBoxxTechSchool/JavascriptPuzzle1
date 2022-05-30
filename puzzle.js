@@ -3,6 +3,7 @@ const variablesReferenceTest = () => {
     const y = x;
     x.attribute1 = 3;
 
+    //Modify the code above so we reach the "throw 'False'" statement
     if (x.attribute1 == y.attribute1) {
         throw 'True';
     } else {
