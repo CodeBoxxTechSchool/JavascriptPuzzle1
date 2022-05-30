@@ -1,13 +1,12 @@
 const variablesReferenceTest = () => {
-    const x = { value1: 1, value2: 2 };
+    const x = { attribute1: 1, attribute2: 2 };
     const y = x;
-    x.value1 = 3;
+    x.attribute1 = 3;
 
-    //Change the above code to get the SUCCESS message
-    if (x.value1 != y.value1) {
-        throw 'ERROR!';
+    if (x.attribute1 == y.attribute1) {
+        throw 'True';
     } else {
-        throw 'SUCCESS';
+        throw 'False';
     }
 };
 
