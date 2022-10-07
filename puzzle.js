@@ -1,6 +1,6 @@
 const variablesReferenceTest = () => {
     const x = { attribute1: 1, attribute2: 2 };
-    const y = x;
+    const y = 5;
     x.attribute1 = 3;
 
     //Modify the code above so we reach the "throw 'False'" statement
