@@ -1,8 +1,13 @@
 const variablesReferenceTest = () => {
     const x = { attribute1: 1, attribute2: 2 };
-    const y = x;
+    const y = {};
+          
+    for (let key in x) {
+        y[key] = x[key];
+    }
     x.attribute1 = 3;
-
+        
+    
     //Modify the code above so we reach the "throw 'False'" statement
     if (x.attribute1 == y.attribute1) {
         throw 'True';
@@ -10,9 +15,11 @@ const variablesReferenceTest = () => {
         throw 'False';
     }
 };
-
+    
 try {
     variablesReferenceTest();
 } catch (error) {
     console.log(error)
 }
+
+   
